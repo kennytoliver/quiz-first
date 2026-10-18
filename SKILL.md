@@ -205,7 +205,7 @@ agent_created: true
 | `references/method-core.md` | 每条规则背后的理由、退出条件、常见误用 |
 | `references/output-patterns.md` | 图式库（7 种）、回答格式、可打印骨架、归档结构 |
 | `references/prompts.md` | 15 条提示词模板（规则的缩写版，冲突时以 SKILL.md 为准） |
-| `references/daily-read-aloud.md` | 朗读材料怎么组、新闻怎么核实 |
+| `references/daily-read-aloud.md` | 四步朗读法、材料四道门槛、来源核实 |
 | `references/dual-agent.md` | 主教练 / 答疑的职责边界与交接格式 |
 | `references/source-material.md` | 从指定教材 / 文档 / 链接学习时的流程与防幻觉规则 |
 | `assets/learning-state-card.md` | 状态卡 + 缺口清单 + 章节册模板 |

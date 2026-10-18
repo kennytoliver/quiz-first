@@ -2,135 +2,134 @@
 
 **English** | [中文](README.md)
 
-**Stop starting from page one. Let me quiz you first — then I'll know what to teach.**
+A skill for teaching yourself an unfamiliar field with an AI: start with a diagnosis, end with something you can show.
+
+Built for career changers, people filling a knowledge gap, and anyone learning a hands-on skill over several weeks.
+
+**The core move is inverted: test first, teach second.** Planning a course without a diagnosis is prescribing without an exam.
 
 ---
 
-Sound familiar?
+## What it solves
 
-You get curious about a new field. You save twenty tutorials, three ebooks, two podcasts.
-You open chapter one, page one. Somewhere around chapter three, you stop.
-Next time you come back, you start at chapter one, page one again.
-
-It's not laziness. Nobody ever told you **which piece you were actually missing.**
-
----
-
-## It works backwards: quiz first, teach second
-
-Everyone else explains first. This one tests first.
-
-Tell it what you want to learn, and it won't open a textbook —
-it hands you **one real task you probably can't finish yet**, and watches where you stall.
-
-Where you stall is where you should study. Not one step further, not one step back.
-
-> **You:** I want to learn data analysis.
->
-> **It:** "You have a single 200k-row order table. Your boss wants to know by tomorrow why repurchases dropped. How do you investigate?"
->
-> Where you stop is exactly what you're missing. It maps your level, lists the gaps,
-> and picks today's unit — instead of page one of a textbook.
+| Where it breaks | What it looks like | How this handles it |
+|---|---|---|
+| **You don't know what you're missing** | Start at chapter one, stop at chapter three, restart at chapter one | One real task you probably can't finish, placed by how far you get — not by climbing up from the basics |
+| **Wrong order** | Your sharpest attention goes to the least useful material | Highest-leverage content first; levels you already have are greyed out; hard dependencies get patched first |
+| **"Looked at it" passes for learning** | It all makes sense until you open your mouth | One question at a time, a confidence rating per answer, review dates set by performance |
+| **Nothing to show afterwards** | Three weeks later you have a folder of bookmarks | A small artifact every round, front-loaded |
 
 ---
 
-## "Looked at it" is not "learned it"
-
-| You think | Reality |
-|---|---|
-| I understood it | You freeze the moment you explain it |
-| I remember it | It's gone in three days |
-| I finished it | You have nothing to show |
-
-**Understanding doesn't count. Explaining it, doing it, spotting the mistake — that counts.**
-
----
-
-## Three hard rules
-
-**① Diagnose first.**
-Prescribing without an exam makes a bad doctor. Planning a course without a diagnosis makes a useless course.
-
-**② Most leveraged content first.**
-Motivation decays. Don't burn it on "Chapter 1: What is X".
-
-**③ Draw the map yourself.**
-A map an AI drew for you doesn't live in your head. It gives you the blank frames and the rules — you hold the pen.
-
----
-
-## One run through the loop, and you'll have
+## How it runs
 
 ```
 ① Diagnose → ② Custom path → ③ Quiz & practice → ④ Consolidate → back to ①
 ```
 
-- **Where you stand** — a 5-level ladder with "you are here" marked
-- **What to learn next** — a gap list plus a schedule led by the highest-value content
-- **Real mastery** — one question at a time; answer right but can't say why, and it doesn't count
-- **Something to show** — a knowledge map you drew, a one-page cheatsheet, a portfolio-ready mini-project
+Three rules that are not optional:
+
+1. **Diagnose before teaching.** Nothing gets taught before the diagnosis is done.
+2. **Most leveraged content first.** Difficulty climbs while drive falls; the two curves run opposite. This does not mean skipping foundations — when the target has a hard dependency (notation, base grammar, a working runtime), the minimum slice gets patched first.
+3. **You draw the map.** The AI supplies rules, a node list and blank frames. A map it draws for you does not grow in your head.
+
+**Two kinds of goals, different endings:**
+
+| | Knowledge | Skill |
+|---|---|---|
+| Typical | Reading a spec, understanding an industry, papers, career change | A song on guitar, driving, typing, speaking a language |
+| Step ④ | Knowledge map + one-page cheatsheet | Movement breakdown + a recording you review |
+| Review | 1 → 2 → 4 → 8 days, then retired as solid | Never more than 3 days apart, never retired |
+
+Most goals are both (learning to program means understanding concepts *and* writing code). Do both.
 
 ---
 
-## What makes it different
+## What you walk away with
 
-- Others generate the mind map for you. This one **makes you draw it** — the pen in your own hand is the whole point.
-- Others answer in walls of text. This one **answers in diagrams** — ladders, contrast axes, printable blank frames.
-- Others assume you're motivated. This one **keeps you moving** — a small artifact each round, stamp-style progress.
-- Others leave you still not getting the industry. This one **has you read it daily** — and say it back out loud.
+Everything lands in a `learning-journal/` folder, not scattered across a chat log:
+
+```
+learning-journal/
+├── state-card.md     # where you are, gap list with review dates, stamp log
+├── maps/             # photos of maps you drew + the AI's review notes
+├── cheatsheets/      # one-page cheatsheets
+└── outputs/          # small artifacts: judgement tables, derivations, recordings
+```
+
+The four core deliverables:
+
+| Deliverable | Contents |
+|---|---|
+| **Level card** | Which of the five rungs you're on, and your initial gaps |
+| **Gap list** | What exactly is missing and when it gets retested — not "practise more" |
+| **Knowledge map** | Drawn by you; the AI only checks for missing nodes, wrong links, misplaced levels |
+| **One-page cheatsheet** | Six-column compression you can re-light your memory with five minutes before an interview |
+
+For skill-type goals the last two become a movement breakdown and a recording.
 
 ---
 
-## Quick start
+## Usage
 
-Send this to your AI:
+Once installed, just say what you want to learn, or paste this:
 
-> I want to learn 【industry / skill】. **Don't teach me anything yet** — first give me one real task question I probably can't finish. After I answer, judge what level I'm at and what I'm missing: if the level is clear, stop and wait for me; if not, ask one more.
+> I want to learn 【field / skill】. **Don't teach me anything yet** — first give me one real task question I probably can't finish. After I answer, judge what level I'm at and what I'm missing: if the level is clear, stop and wait for me; if not, ask one more.
 
-If you can't answer, write "I don't know" — that's a valid answer, and it costs you nothing.
+If you can't answer, write "I don't know" — that's a valid answer and it costs you nothing.
+
+`references/prompts.md` holds 15 ready-made templates covering diagnosis, path building, quizzing, retests, mapping, cheatsheets, resource filtering and learning from a given source.
 
 ---
 
 ## Install
 
-Drop this directory into the skills folder of whatever agent you use — **name the folder `quiz-first`** so it matches the `name` in `SKILL.md`:
+Drop the whole directory into your agent's skills folder. **Name the folder `quiz-first`** so it matches the `name` field in `SKILL.md`:
 
 ```bash
-# common locations
-~/.claude/skills/quiz-first/
-~/.codex/skills/quiz-first/
-~/.workbuddy/skills/quiz-first/
-
-# or per-project
-<project>/.workbuddy/skills/quiz-first/
+<your-skills-dir>/quiz-first/
 ```
 
-Anything that supports `SKILL.md` + YAML frontmatter works. Once installed, just say "I want to learn X" — no commands to memorize.
+Anything that reads `SKILL.md` + YAML frontmatter will load it — Claude Code, Codex, WorkBuddy, and custom agents alike. After that, just say "I want to learn X".
 
 <details>
 <summary>Layout</summary>
 
 ```
 quiz-first/
-├── SKILL.md
+├── SKILL.md                      # rules, loop, scoring, execution flow
 ├── references/
-│   ├── method-core.md        # loop, mastery criteria, exit criteria
-│   ├── output-patterns.md    # diagram library, stamps, reply format
-│   ├── prompts.md            # 15 prompt templates
-│   ├── daily-read-aloud.md   # daily industry read-aloud (optional)
-│   ├── dual-agent.md         # coach / Q&A roles
-│   └── source-material.md    # learning from a given source
+│   ├── method-core.md            # why each rule exists, limits, exit criteria, common misuse
+│   ├── output-patterns.md        # seven diagram types, reply format, printable frames, archive layout
+│   ├── prompts.md                # 15 prompt templates
+│   ├── daily-read-aloud.md       # daily reading and speaking drill (optional)
+│   ├── dual-agent.md             # coach / researcher split
+│   └── source-material.md        # learning from a given textbook, spec or link
 └── assets/
-    ├── learning-state-card.md
-    ├── blank-map-frames.md
-    └── one-page-cheatsheet.md
+    ├── learning-state-card.md    # state card + gap list + stamp log
+    ├── blank-map-frames.md       # 5 printable blank frames
+    └── one-page-cheatsheet.md    # cheatsheet template
 ```
 </details>
 
 ---
 
+## Scope
+
+**Fits**: career-change prep, filling a subject gap, getting started on a hands-on skill, goals that run over several weeks.
+
+**Doesn't fit**: asking what a single term means, wanting one fact, asking for a paragraph to be rewritten. Those get a direct answer — `SKILL.md` states this boundary explicitly.
+
+**Optional module**: the daily read-aloud. Read 300–500 words from the field out loud three times, retell it with the source closed, retell again from 3–5 keywords, then play the recording back. Ten to fifteen minutes end to end. It trains reading and speaking at once, but it eats a whole block, so it is off by default and never forced.
+
+---
+
+## Provenance
+
+The method started from two public Chinese-language videos — one on six ways to learn anything faster with AI, one by a teacher of 14 years on how people actually learn. This repo is a structured rewrite and expansion, not a sentence-by-sentence transcription, and makes no claim of original authorship over the core methods.
+
+Beyond those videos, this repo adds: confidence ratings and review scheduling, per-unit rubrics, the opening recall question, multi-topic scheduling, old-unit mixing, the source-material mode, light mode, exit criteria, and anti-hallucination rules — plus the whole output-shape spec (seven diagram types, three-way split, printable blank frames, reply format). **The daily read-aloud and the coach / researcher split appear in neither video**; both are independent additions.
+
+---
+
 MIT · kennytoliver
-
-The method started from two public Chinese-language videos (one on six ways to learn anything faster with AI, one by a teacher of 14 years on how people actually learn). This repo is a structured rewrite and expansion — not a sentence-by-sentence transcription, and no claim of original authorship over the core methods.
-
-Beyond those videos, this repo adds: confidence ratings and review scheduling, per-unit rubrics, the opening recall question, multi-topic scheduling, old-unit mixing, the source-material mode, light mode, exit criteria, and anti-hallucination rules — plus the whole output-shape spec (seven diagram types, three-way split, printable blank frames, reply format). **The daily read-aloud and the coach / researcher split do not appear in either video at all**; both are independent additions.
