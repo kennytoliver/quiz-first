@@ -1,36 +1,38 @@
 # Quiz-First
 
-**You don't need another tutorial. You need a test.**
+## Can't answer it? Good.
 
-A skill for your agent: one real task you can't finish tells it where you actually are — then it teaches only that.
+A learning skill for your agent. The first thing it does isn't teach — it hands you a task you can't finish.
 
 [How it runs](#how-it-runs) · [What you get](#what-you-get) · [Install](#install) · [Full guide](GUIDE.md) *(Chinese)*
 
 ---
 
-## Sound familiar
+Three weekends on Python.
+
+The first: setting up the environment. The second: syntax. The third: you follow a tutorial, build a scraper, and it runs. You screenshot it.
+
+The fourth weekend you try to change that scraper. Line three. You sit there for five minutes and realise you can't explain one thing: where does this variable actually live.
+
+That's the moment it lands — those three weekends weren't Python. They were **how to follow a tutorial**.
+
+---
 
 Twenty tutorials saved. Three ebooks. Two podcasts.
 
-Chapter one, page one. Somewhere around chapter three, you stop.
+Chapter one, page one. Somewhere around chapter three, you stop. Next time you come back, you start at chapter one, page one again.
 
-Next time you come back, you start at chapter one, page one again.
+You're not lazy. Nobody ever asked you one question: **can you actually do this yet?**
 
----
+Every tutorial assumes you start from zero, so every tutorial starts at zero. So you re-learn what you already knew, and the one thing that actually blocks you never gets touched.
 
-**That is not laziness. That is three weeks spent learning what you already knew.**
-
-The one piece you're actually missing was never pointed out — because nobody knows which piece it is. Including you.
-
-So you get very good at "having studied it", and less and less willing to admit you can't do it.
-
-Then someone asks one specific question, and your mind goes blank.
+Someone asks a specific question and your mind goes blank. Of course it does — you spent three weeks on material that wasn't the thing they asked about.
 
 ---
 
-## This runs backwards
+## So it tests you first
 
-The first thing it gives you is not chapter one. It's **one real task you probably can't finish**.
+The first thing it gives you is not chapter one. It's a real task you probably can't finish.
 
 Where you stall is where you are.
 
@@ -38,10 +40,9 @@ Study starts there. Not one step earlier, not one step later.
 
 > **You:** I want to move into AI data QA.
 >
-> **It:** Here are five reviews, five labels an intern already applied. Audit them — which are wrong, and why.
+> **It:** Five reviews, five labels an intern already applied. Audit them — which one is wrong, and why.
 >
-> Do you start judging, or do you first ask "where's the guideline?" That one move gives your level away.
-> From there it tells you which rung you're on and what today's unit is — instead of making you memorise definitions first.
+> Do you start judging, or do you ask "where's the guideline?" That single move gives your level away.
 
 ---
 
@@ -61,7 +62,7 @@ Study starts there. Not one step earlier, not one step later.
 **Three rules it won't bend:**
 
 - **Diagnose before teaching.** A plan without a diagnosis is a prescription without an exam.
-- **Highest-leverage content first.** Drive falls while difficulty climbs. Front-loading the hard part is not the same as skipping the foundation.
+- **Highest-leverage content first.** Drive falls while difficulty climbs. Front-loading is not the same as skipping the foundation.
 - **You draw the map.** A map it draws for you doesn't live in your head.
 
 ---
@@ -109,7 +110,7 @@ Then just say what you want to learn. Or paste this:
 
 **Will it nag me to keep a streak?** No. Missing a day costs nothing, and there's a light mode that only reviews.
 
-**Is it only for job skills?** No. Instruments, subjects and languages all run — knowledge-type and skill-type goals take different step ④ paths, documented separately.
+**Is it only for job skills?** No. Instruments, subjects and languages all run — knowledge-type and skill-type goals take different step ④ paths.
 
 **Will it make things up?** The files forbid it: unsourced material can't be called "latest", and anything a document doesn't cover gets stated as not covered.
 
