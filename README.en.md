@@ -1,121 +1,172 @@
 # Quiz-First
 
-## Can't answer it? Good.
-
-A learning skill for your agent. The first thing it does isn't teach — it hands you a task you can't finish.
-
-[How it runs](#how-it-runs) · [What you get](#what-you-get) · [Install](#install) · [Full guide](GUIDE.md) *(Chinese)*
+*A skill for your agent: it quizzes you first, then teaches only the part you're missing.*
 
 ---
 
-Three weekends on Python.
+You printed a 30-day study plan and taped it to the wall. The first three days got a tick. The fourth box is still blank.
 
-The first: setting up the environment. The second: syntax. The third: you follow a tutorial, build a scraper, and it runs. You screenshot it.
+You signed up for a course, got to lecture five, and never opened that tab again.
 
-The fourth weekend you try to change that scraper. Line three. You sit there for five minutes and realise you can't explain one thing: where does this variable actually live.
+There's a folder in your bookmarks called "to learn". Forty-odd links. The oldest one is three years old.
 
-That's the moment it lands — those three weekends weren't Python. They were **how to follow a tutorial**.
+Same script every time: the first two days you're on fire — notes, a schedule, telling people "I'm learning X right now". Day four it gets hard. Day five you say "I'll catch up tomorrow". By day seven you've stopped mentioning it.
 
----
-
-Twenty tutorials saved. Three ebooks. Two podcasts.
-
-Chapter one, page one. Somewhere around chapter three, you stop. Next time you come back, you start at chapter one, page one again.
-
-You're not lazy. Nobody ever asked you one question: **can you actually do this yet?**
-
-Every tutorial assumes you start from zero, so every tutorial starts at zero. So you re-learn what you already knew, and the one thing that actually blocks you never gets touched.
-
-Someone asks a specific question and your mind goes blank. Of course it does — you spent three weeks on material that wasn't the thing they asked about.
+By the third round of this, you start to wonder something uncomfortable: maybe I'm just not the kind of person who can learn things.
 
 ---
 
-## So it tests you first
+## It isn't your fault
 
-The first thing it gives you is not chapter one. It's a real task you probably can't finish.
+The reason is rarely laziness, and rarely a lack of time.
 
-Where you stall is where you are.
+It's that you break down at the same point every time, and **you don't know where that point is**.
+
+So you start at the easiest place available: open the tutorial, read two lines, "I know this", feel a bit better. You make it to chapter three, hit the first thing you genuinely don't understand, and stop.
+
+Next time you're back at page one — because that's the only place that makes you feel like you're learning.
+
+---
+
+The tutorials aren't wrong. They just assume you're starting from zero, because whoever wrote them can't know what you already have.
+
+So three things happen at once:
+
+**What you already know gets taught to you again.** Three weeks pass; you've reviewed a pile of material you had anyway.
+
+**The part that actually blocks you never gets touched.** It's in chapter seven, and you never reach chapter seven.
+
+**Your drive gets spent where it's least needed.** Motivation is finite and it's highest at the start — which is exactly where the easiest material sits.
+
+---
+
+## So it runs backwards
+
+The first thing it does is not teach.
+
+It hands you **a task you almost certainly can't finish right now**.
+
+Not finishing is normal — the task was built to be unfinishable. Where you stall is where you actually are.
 
 Study starts there. Not one step earlier, not one step later.
 
-> **You:** I want to move into AI data QA.
->
-> **It:** Five reviews, five labels an intern already applied. Audit them — which one is wrong, and why.
->
-> Do you start judging, or do you ask "where's the guideline?" That single move gives your level away.
+The loop is four steps: **diagnose → set a path → quiz and practise → consolidate**. Then back to the first one to recalibrate.
+
+That last step, consolidate, means drawing what you learned into a map and squashing it onto one page. Not revision — getting it out of your head and into something you can look at.
 
 ---
 
-## How it runs
+## A concrete example: learning AI
 
-```
-① diagnose → ② custom path → ③ quiz & practice → ④ consolidate → back to ①
-```
+You want to learn AI. You search "how to get into AI" and the answers are all the same:
 
-| Step | You | It |
+Learn Python, then linear algebra and probability, then machine learning, then deep learning.
+
+You start with the first one. Python goes fine for two weeks. Linear algebra stops you at eigenvalues.
+
+Three months later you're still at the gate of step one, starting to think you're not built for this.
+
+The problem isn't effort. **"Learn AI" is at least three different people:**
+
+| What you want to do | What to learn first | What you can skip entirely |
 |---|---|---|
-| ① Diagnose | Answer one real task; "I don't know" is fine | Places you by how far you get, marks "you are here" |
-| ② Path | Confirm or correct the ladder | Builds 5 levels, skips what you know, schedules |
-| ③ Quiz | One question at a time, plus a confidence rating | Judges, re-teaches only the gaps, sets review dates |
-| ④ Consolidate | Draw the map, retell it | Gives rules and blank frames, checks — never draws for you |
+| Build products on top of AI, call APIs | Prompting, API calls, cost per request | Backpropagation, gradient derivations |
+| Train your own models | Data cleaning, what a loss function is | Frontend, deployment |
+| Work in data labelling / QA | Annotation specs, acceptance criteria, edge cases | Not a single line of code |
 
-**Three rules it won't bend:**
+What those three people study over the next three months barely overlaps.
 
-- **Diagnose before teaching.** A plan without a diagnosis is a prescription without an exam.
-- **Highest-leverage content first.** Drive falls while difficulty climbs. Front-loading is not the same as skipping the foundation.
-- **You draw the map.** A map it draws for you doesn't live in your head.
+Follow the "Python → maths → machine learning" route and all three stop at the same place: the maths.
+
+It doesn't open that way. **It asks one question first: what do you want to do with AI?**
+
+Then it gives you a real task from that direction:
+
+- **Data QA** → five reviews, five labels an intern already applied. Spot which ones are wrong, and why.
+- **Building on APIs** → one concrete requirement. Write the first prompt that actually runs.
+- **Training a model** → a small batch of dirty data. Say which rows can't go into the training set.
+
+Where you stall is where you start.
 
 ---
 
-## What you get
+## How is this different from just asking an AI
+
+| The usual way | This skill |
+|---|---|
+| You say what you want to learn, it hands you a curriculum | It gives you a task first, then builds the curriculum from where you stalled |
+| The curriculum goes basics → advanced | The highest-leverage part moves to the front; the rest fills gaps |
+| Saying "got it" counts as learned | You rate your confidence (4 certain / 3 mostly / 2 guessed / 1 blind); a right answer with no confidence schedules a retest |
+| It draws the mind map for you | It gives blank frames and rules; you draw |
+| You end up with a chat log | You end up with a folder full of files |
+
+---
+
+## What you have after one loop
 
 Not a chat log. A folder:
 
 ```
 learning-journal/
-├── state-card.md     # where you are, what's missing, when it gets retested
-├── maps/             # maps you drew by hand
+├── state-card.md     # where you are, what's missing, what's due for retest
+├── maps/             # knowledge maps you drew by hand
 ├── cheatsheets/      # one-page sheets
-└── outputs/          # small artifacts from each round
+└── outputs/          # the small artifact from each round
 ```
 
 | Artifact | What's inside |
 |---|---|
-| **Level card** | Which of five rungs you're on, and your initial gaps |
+| **Level card** | Which rung you're on, and your initial gaps |
 | **Gap list** | What exactly is missing and when it gets retested — not "practise more" |
 | **Knowledge map** | Drawn by you; it only flags missing nodes, wrong links, misplaced levels |
 | **One-page cheatsheet** | Six columns you can re-read five minutes before an interview |
 
-For hands-on skills (instruments, sports, operating things), the last two become a movement breakdown and a recording.
+The level card, the ladder and the schedule don't live in separate files — they sit inside `state-card.md`, so there's only one place to look.
+
+For hands-on skills (instruments, sports, operating things), the map and the cheatsheet become a movement breakdown and a recording.
 
 ---
 
 ## Install
 
-Drop the folder into your agent's skills directory, named `quiz-first`:
+**What you need**: an agent that reads `SKILL.md` (Claude Code, Codex, WorkBuddy, Cursor and similar). No dependencies, no account. The core loop runs offline; only the optional daily read-aloud needs a connection.
+
+**Step 1 — get the files.**
 
 ```bash
-<your-skills-dir>/quiz-first/
+git clone https://github.com/kennytoliver/quiz-first.git
 ```
 
-Then just say what you want to learn. Or paste this:
+No git? Use Code → Download ZIP. The unzipped folder is called `quiz-first-main` — **rename it to `quiz-first`**, or the command below won't match.
 
-> I want to learn 【field / skill】. **Don't teach me anything yet** — first give me one real task I probably can't finish.
+**Step 2 — put it in your agent's skills folder.** Use `quiz-first` as the folder name (what actually loads is the `name` field inside `SKILL.md`; a different folder name still works, it's just harder to find later).
+
+| Agent | Default location |
+|---|---|
+| Claude Code | `~/.claude/skills/quiz-first/` |
+| Codex | `~/.codex/skills/` or `~/.config/codex/skills/` (varies by version) |
+| WorkBuddy | `~/.workbuddy/skills/quiz-first/` |
+| Others | Usually `~/.<your-agent>/skills/` — check the docs if unsure |
+
+```bash
+# Claude Code, for example
+mv quiz-first ~/.claude/skills/
+```
+
+**Step 3 — confirm it landed.**
+
+```bash
+ls ~/.claude/skills/quiz-first/SKILL.md
+```
+
+If that file shows up, you're good.
+
+**Step 4 — start a new session.** Skills are indexed when a session starts, so **an existing session won't pick it up**. Open a new one.
+
+**Check that it loaded**: say "I want to learn X". The first reply should ask which direction you want, then hand you **a task**. If it starts explaining concepts or gives you a curriculum, it didn't load — check that `SKILL.md` sits at the folder root.
+
+More detail: [GUIDE.md](GUIDE.md) *(Chinese)*
 
 ---
 
-## Questions you're probably asking
-
-**Does it cost anything?** No. MIT. No dependencies, no service, no account.
-
-**Will it nag me to keep a streak?** No. Missing a day costs nothing, and there's a light mode that only reviews.
-
-**Is it only for job skills?** No. Instruments, subjects and languages all run — knowledge-type and skill-type goals take different step ④ paths.
-
-**Will it make things up?** The files forbid it: unsourced material can't be called "latest", and anything a document doesn't cover gets stated as not covered.
-
----
-
-Full rules, limits and what each file does: [GUIDE.md](GUIDE.md) *(Chinese)*
-
-MIT
+[MIT](LICENSE)
