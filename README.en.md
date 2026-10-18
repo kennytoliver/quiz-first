@@ -1,135 +1,120 @@
-# Quiz-First · quiz-first
+# Quiz-First
 
-**English** | [中文](README.md)
+**You don't need another tutorial. You need a test.**
 
-A skill for teaching yourself an unfamiliar field with an AI: start with a diagnosis, end with something you can show.
+A skill for your agent: one real task you can't finish tells it where you actually are — then it teaches only that.
 
-Built for career changers, people filling a knowledge gap, and anyone learning a hands-on skill over several weeks.
-
-**The core move is inverted: test first, teach second.** Planning a course without a diagnosis is prescribing without an exam.
+[How it runs](#how-it-runs) · [What you get](#what-you-get) · [Install](#install) · [Full guide](GUIDE.md) *(Chinese)*
 
 ---
 
-## What it solves
+## Sound familiar
 
-| Where it breaks | What it looks like | How this handles it |
-|---|---|---|
-| **You don't know what you're missing** | Start at chapter one, stop at chapter three, restart at chapter one | One real task you probably can't finish, placed by how far you get — not by climbing up from the basics |
-| **Wrong order** | Your sharpest attention goes to the least useful material | Highest-leverage content first; levels you already have are greyed out; hard dependencies get patched first |
-| **"Looked at it" passes for learning** | It all makes sense until you open your mouth | One question at a time, a confidence rating per answer, review dates set by performance |
-| **Nothing to show afterwards** | Three weeks later you have a folder of bookmarks | A small artifact every round, front-loaded |
+Twenty tutorials saved. Three ebooks. Two podcasts.
+
+Chapter one, page one. Somewhere around chapter three, you stop.
+
+Next time you come back, you start at chapter one, page one again.
+
+---
+
+**That is not laziness. That is three weeks spent learning what you already knew.**
+
+The one piece you're actually missing was never pointed out — because nobody knows which piece it is. Including you.
+
+So you get very good at "having studied it", and less and less willing to admit you can't do it.
+
+Then someone asks one specific question, and your mind goes blank.
+
+---
+
+## This runs backwards
+
+The first thing it gives you is not chapter one. It's **one real task you probably can't finish**.
+
+Where you stall is where you are.
+
+Study starts there. Not one step earlier, not one step later.
+
+> **You:** I want to move into AI data QA.
+>
+> **It:** Here are five reviews, five labels an intern already applied. Audit them — which are wrong, and why.
+>
+> Do you start judging, or do you first ask "where's the guideline?" That one move gives your level away.
+> From there it tells you which rung you're on and what today's unit is — instead of making you memorise definitions first.
 
 ---
 
 ## How it runs
 
 ```
-① Diagnose → ② Custom path → ③ Quiz & practice → ④ Consolidate → back to ①
+① diagnose → ② custom path → ③ quiz & practice → ④ consolidate → back to ①
 ```
 
-Three rules that are not optional:
-
-1. **Diagnose before teaching.** Nothing gets taught before the diagnosis is done.
-2. **Most leveraged content first.** Difficulty climbs while drive falls; the two curves run opposite. This does not mean skipping foundations — when the target has a hard dependency (notation, base grammar, a working runtime), the minimum slice gets patched first.
-3. **You draw the map.** The AI supplies rules, a node list and blank frames. A map it draws for you does not grow in your head.
-
-**Two kinds of goals, different endings:**
-
-| | Knowledge | Skill |
+| Step | You | It |
 |---|---|---|
-| Typical | Reading a spec, understanding an industry, papers, career change | A song on guitar, driving, typing, speaking a language |
-| Step ④ | Knowledge map + one-page cheatsheet | Movement breakdown + a recording you review |
-| Review | 1 → 2 → 4 → 8 days, then retired as solid | Never more than 3 days apart, never retired |
+| ① Diagnose | Answer one real task; "I don't know" is fine | Places you by how far you get, marks "you are here" |
+| ② Path | Confirm or correct the ladder | Builds 5 levels, skips what you know, schedules |
+| ③ Quiz | One question at a time, plus a confidence rating | Judges, re-teaches only the gaps, sets review dates |
+| ④ Consolidate | Draw the map, retell it | Gives rules and blank frames, checks — never draws for you |
 
-Most goals are both (learning to program means understanding concepts *and* writing code). Do both.
+**Three rules it won't bend:**
+
+- **Diagnose before teaching.** A plan without a diagnosis is a prescription without an exam.
+- **Highest-leverage content first.** Drive falls while difficulty climbs. Front-loading the hard part is not the same as skipping the foundation.
+- **You draw the map.** A map it draws for you doesn't live in your head.
 
 ---
 
-## What you walk away with
+## What you get
 
-Everything lands in a `learning-journal/` folder, not scattered across a chat log:
+Not a chat log. A folder:
 
 ```
 learning-journal/
-├── state-card.md     # where you are, gap list with review dates, stamp log
-├── maps/             # photos of maps you drew + the AI's review notes
-├── cheatsheets/      # one-page cheatsheets
-└── outputs/          # small artifacts: judgement tables, derivations, recordings
+├── state-card.md     # where you are, what's missing, when it gets retested
+├── maps/             # maps you drew by hand
+├── cheatsheets/      # one-page sheets
+└── outputs/          # small artifacts from each round
 ```
 
-The four core deliverables:
-
-| Deliverable | Contents |
+| Artifact | What's inside |
 |---|---|
-| **Level card** | Which of the five rungs you're on, and your initial gaps |
+| **Level card** | Which of five rungs you're on, and your initial gaps |
 | **Gap list** | What exactly is missing and when it gets retested — not "practise more" |
-| **Knowledge map** | Drawn by you; the AI only checks for missing nodes, wrong links, misplaced levels |
-| **One-page cheatsheet** | Six-column compression you can re-light your memory with five minutes before an interview |
+| **Knowledge map** | Drawn by you; it only flags missing nodes, wrong links, misplaced levels |
+| **One-page cheatsheet** | Six columns you can re-read five minutes before an interview |
 
-For skill-type goals the last two become a movement breakdown and a recording.
-
----
-
-## Usage
-
-Once installed, just say what you want to learn, or paste this:
-
-> I want to learn 【field / skill】. **Don't teach me anything yet** — first give me one real task question I probably can't finish. After I answer, judge what level I'm at and what I'm missing: if the level is clear, stop and wait for me; if not, ask one more.
-
-If you can't answer, write "I don't know" — that's a valid answer and it costs you nothing.
-
-`references/prompts.md` holds 15 ready-made templates covering diagnosis, path building, quizzing, retests, mapping, cheatsheets, resource filtering and learning from a given source.
+For hands-on skills (instruments, sports, operating things), the last two become a movement breakdown and a recording.
 
 ---
 
 ## Install
 
-Drop the whole directory into your agent's skills folder. **Name the folder `quiz-first`** so it matches the `name` field in `SKILL.md`:
+Drop the folder into your agent's skills directory, named `quiz-first`:
 
 ```bash
 <your-skills-dir>/quiz-first/
 ```
 
-Anything that reads `SKILL.md` + YAML frontmatter will load it — Claude Code, Codex, WorkBuddy, and custom agents alike. After that, just say "I want to learn X".
+Then just say what you want to learn. Or paste this:
 
-<details>
-<summary>Layout</summary>
-
-```
-quiz-first/
-├── SKILL.md                      # rules, loop, scoring, execution flow
-├── references/
-│   ├── method-core.md            # why each rule exists, limits, exit criteria, common misuse
-│   ├── output-patterns.md        # seven diagram types, reply format, printable frames, archive layout
-│   ├── prompts.md                # 15 prompt templates
-│   ├── daily-read-aloud.md       # daily reading and speaking drill (optional)
-│   ├── dual-agent.md             # coach / researcher split
-│   └── source-material.md        # learning from a given textbook, spec or link
-└── assets/
-    ├── learning-state-card.md    # state card + gap list + stamp log
-    ├── blank-map-frames.md       # 5 printable blank frames
-    └── one-page-cheatsheet.md    # cheatsheet template
-```
-</details>
+> I want to learn 【field / skill】. **Don't teach me anything yet** — first give me one real task I probably can't finish.
 
 ---
 
-## Scope
+## Questions you're probably asking
 
-**Fits**: career-change prep, filling a subject gap, getting started on a hands-on skill, goals that run over several weeks.
+**Does it cost anything?** No. MIT. No dependencies, no service, no account.
 
-**Doesn't fit**: asking what a single term means, wanting one fact, asking for a paragraph to be rewritten. Those get a direct answer — `SKILL.md` states this boundary explicitly.
+**Will it nag me to keep a streak?** No. Missing a day costs nothing, and there's a light mode that only reviews.
 
-**Optional module**: the daily read-aloud. Read 300–500 words from the field out loud three times, retell it with the source closed, retell again from 3–5 keywords, then play the recording back. Ten to fifteen minutes end to end. It trains reading and speaking at once, but it eats a whole block, so it is off by default and never forced.
+**Is it only for job skills?** No. Instruments, subjects and languages all run — knowledge-type and skill-type goals take different step ④ paths, documented separately.
 
----
-
-## Provenance
-
-The method started from two public Chinese-language videos — one on six ways to learn anything faster with AI, one by a teacher of 14 years on how people actually learn. This repo is a structured rewrite and expansion, not a sentence-by-sentence transcription, and makes no claim of original authorship over the core methods.
-
-Beyond those videos, this repo adds: confidence ratings and review scheduling, per-unit rubrics, the opening recall question, multi-topic scheduling, old-unit mixing, the source-material mode, light mode, exit criteria, and anti-hallucination rules — plus the whole output-shape spec (seven diagram types, three-way split, printable blank frames, reply format). **The daily read-aloud and the coach / researcher split appear in neither video**; both are independent additions.
+**Will it make things up?** The files forbid it: unsourced material can't be called "latest", and anything a document doesn't cover gets stated as not covered.
 
 ---
 
-MIT · kennytoliver
+Full rules, limits and what each file does: [GUIDE.md](GUIDE.md) *(Chinese)*
+
+MIT
