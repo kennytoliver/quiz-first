@@ -174,7 +174,8 @@ quiz-first/
 └── assets/
     ├── learning-state-card.md    # 状态卡 + 缺口清单 + 集章表
     ├── blank-map-frames.md       # 5 种可打印空白骨架
-    └── one-page-cheatsheet.md    # 一页速查表模板
+    ├── one-page-cheatsheet.md    # 一页速查表模板
+    └── learning-dashboard.html   # 看板模板（可选，单文件只读）
 ```
 
 运行时生成的数据都在 `learning-journal/`，不在仓库里，也不会被提交。
